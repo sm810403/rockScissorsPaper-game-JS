@@ -11,22 +11,26 @@
         <div class="box">
             <h1>'Rock!''Scissors!''Paper!'</h1>
             <div class="inner-box">
-                <div class="left-box">
+                <div class="left-box fade">
                     <div class="score">Your Score:<span id="your-score">0</span></div>
-                    <div class="img-first" alt="img"></div>
+                    <div class="img-first" alt="img">
+                        <img src="images/paper.svg" id="imgs" class="img-1">
+                    </div>
                 </div>
-                <div class="right-box">
+                <button class="play">Play game</button>
+                <div class="right-box fade">
                     <div class="score2">Your Score:<span id="comp-score">0</span></div>
-                    <div class="img-second" alt="img"></div>
+                    <div class="img-second" alt="img">
+                        <img src="images/paper.svg" id="imgs" class="img-2">
+                    </div>
                 </div>
             </div>
             <div class="result"></div> 
             <div class="buttons">
-                <button type="button" class="btn-1 btn">Rock</button>
-                <button type="button" class="btn-2 btn">Scissors</button>
-                <button type="button" class="btn-3 btn">Paper</button>           
+                <button type="button" class="btn-1 btn" id="btn">Rock</button>
+                <button type="button" class="btn-2 btn" id="btn">Scissors</button>
+                <button type="button" class="btn-3 btn" id="btn">Paper</button>           
             </div>
-            <button type="button" class="restart">Restart</div>
         </div>
     </div>
 

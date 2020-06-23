@@ -40,10 +40,21 @@ h1 {
 }
 .img-first, .img-second {
     display: block;
-    width: 300px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    margin: auto;
+}
+
+#imgs {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    
 }
 .score, .score2 {
     padding: 20px;
@@ -59,8 +70,8 @@ span {
     font-size: 40px;
     color: red;
 }
-.btn {
-    padding: 20px 40px;
+#btn {
+    padding: 10px 30px;
     margin: 10px 20px;
     font-size: 30px;
     border-radius: 20px;
@@ -69,21 +80,34 @@ span {
     cursor: pointer;
     transition: transform .4s ease-out;
 }
-.btn:hover {
+#btn:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 20px black;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: 2px solid white;
 }
-.restart {
-    font-size: 20px;
+.left-box, .right-box {
+    transition: opacity .4s ease-in-out;
+}
+.fade {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+.play {
     padding: 20px;
-    border-radius: 20px;
-    background-color: lightgoldenrodyellow;
+    align-self: flex-end;
+    margin-top: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    outline: none;
     cursor: pointer;
+    transition: opacity .4s ease-out;
 }
-.restart:hover {
-    background-color: black;
-    color: white;
+.play:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px black;
 }
+
